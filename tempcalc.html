@@ -33,10 +33,10 @@
     		<div class="col-sm-3 sidenav">
       		<h3>Choose</h3>
       		<ul class="nav nav-pills nav-stacked">
-        		<li class="active"><a href="trywindowlocation.html">Base conversions</a></li>
-        		<li><a href="tempcalc.html">Temp-conversion</a></li>
-        		<li><a href="#">Binary Arithmetic</a></li>
-        		<li><a href="#">Mass conversions</a></li>
+        		<li><a href="trywindowlocation.html">Base conversions</a></li>
+        		<li  class="active"><a href="tempcalc.html">Temp-conversion</a></li>
+        		<li><a href="Binary Arithmetic.html">Binary Arithmetic</a></li>
+        		<!--<li><a href="#">Mass conversions</a></li>-->
       		</ul><br>
        		</div>
     		<div class="col-sm-9">
@@ -51,7 +51,7 @@
 
       				<div class="col-lg-3 col-sm-3 col-xs-3 "><span><input class="form-control" type="text" value="" placeholder="eg: K for kelvin" name="totemp" id="to"></span></div>
 
-      			</div><br><br><br><br><br><br><br>
+      			</div><br><br><br><br><br>
       			<div class="row">
 
       				<div class="col-lg-6 col-sm-6 col-xs-6 text-center"><span class="text-success"><b>Enter Temperature:</b></span></div>
@@ -75,7 +75,7 @@
       				<div class="col-lg-6 col-sm-6 col-xs-6 text-center"><span class="text-success"><b>Result:</b></span></div>
       				<div class="col-lg-6 col-sm-6 col-xs-6"><input type="number" class="form-control"   value="" id="result" name="output"></div>
 
-      			</div><br><br>
+      			</div><br>
      
       
      
@@ -140,6 +140,10 @@
 			alert("Wrong input!!");
 
 		document.getElementById("result").value=out;
+
+		document.getElementById('from').value='';
+		document.getElementById('to').value='';
+		document.getElementById('numm').value='';
 	}
 
 </script>
